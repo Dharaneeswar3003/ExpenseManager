@@ -66,7 +66,7 @@ The Quit button allows the user to quit the program, of course!
             saveExpenseToFile("OtherExpenses.txt", purpose, amount, date, "Other", id);
         }
  ```
-When the user enters all the valid info and clicks submit, the expense gets saved to a txt file depending on the category selected. For example, if the user selects the expense to be in the "Food" category, the expense will get saved in the "Food&Drinks.txt" file. Then, it will get displayed in the table when the page is refreshed. The code above shows how the txt file is determined and how the parameters are validated. After that, the expenses are written to the folder like:
+When the user enters all the valid info and clicks submit, the expense gets saved to a txt file depending on the category selected. For example, if the user selects the expense to be in the "Food" category, the expense will get saved in the "Food&Drinks.txt" file. Then, it will get displayed in the table when the page is refreshed, i.e., when the dashboard is reloaded. The code above shows how the txt file is determined and how the parameters are validated. After that, the expenses are written to the folder like:
 ```
 public void writeToFile(String fileName) throws IOException {
         FileWriter fw = new FileWriter(fileName, true);
